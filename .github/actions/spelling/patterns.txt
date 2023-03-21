@@ -1,0 +1,158 @@
+# See https://github.com/check-spelling/check-spelling/wiki/Configuration-Examples:-patterns
+
+# hit-count: 2331 file-count: 541
+# https/http/file urls
+(?:\b(?:https?|ftp|file)://)[-A-Za-z0-9+&@#/%?=~_|!:,.;]+[-A-Za-z0-9+&@#/%=~_|]
+
+# hit-count: 1207 file-count: 75
+# hex digits including css/html color classes:
+(?:[\\0][xX]|\\u|[uU]\+|#x?|\%23)[0-9_a-fA-FgGrR]*?[a-fA-FgGrR]{2,}[0-9_a-fA-FgGrR]*(?:[uUlL]{0,3}|u\d+)\b
+
+# hit-count: 1084 file-count: 265
+# IServiceProvider
+\bI(?=(?:[A-Z][a-z]{2,})+\b)
+
+# hit-count: 605 file-count: 36
+# in a version of check-spelling after @0.0.21 printf markers won't be automatically consumed
+# printf markers
+(?<!\\)\\[nr](?=[a-z]{2,})
+(?<!\\)(?:\\[t]){2,}(?=[a-z]{2,})
+
+# hit-count: 143 file-count: 30
+# css url wrappings
+\burl\([^)]*\)
+
+# Automatically suggested patterns
+# hit-count: 113 file-count: 22
+# Non-English
+[a-zA-Z]*[ÀÁÂÃÄÅÆÇÈÉÊËÌÍÎÏÐÑÒÓÔÕÖØÙÚÛÜÝßàáâãäåæçèéêëìíîïðñòóôõöøùúûüýÿĀāŁłŃńŅņŒœŚśŠšŜŝŸŽžź][a-zA-Z]{3}[a-zA-ZÀÁÂÃÄÅÆÇÈÉÊËÌÍÎÏÐÑÒÓÔÕÖØÙÚÛÜÝßàáâãäåæçèéêëìíîïðñòóôõöøùúûüýÿĀāŁłŃńŅņŒœŚśŠšŜŝŸŽžź]*|[a-zA-Z]{3,}[ÀÁÂÃÄÅÆÇÈÉÊËÌÍÎÏÐÑÒÓÔÕÖØÙÚÛÜÝßàáâãäåæçèéêëìíîïðñòóôõöøùúûüýÿĀāŁłŃńŅņŒœŚśŠšŜŝŸŽžź]|[ÀÁÂÃÄÅÆÇÈÉÊËÌÍÎÏÐÑÒÓÔÕÖØÙÚÛÜÝßàáâãäåæçèéêëìíîïðñòóôõöøùúûüýÿĀāŁłŃńŅņŒœŚśŠšŜŝŸŽžź][a-zA-Z]{3,}
+
+# hit-count: 85 file-count: 13
+# URL escaped characters
+\%[0-9A-F][A-F]
+
+# hit-count: 56 file-count: 44
+# hex runs
+\b[0-9a-fA-F]{16,}\b
+
+# hit-count: 52 file-count: 34
+# version suffix <word>v#
+(?:(?<=[A-Z]{2})V|(?<=[a-z]{2}|[A-Z]{2})v)\d+(?:\b|(?=[a-zA-Z_]))
+
+# hit-count: 37 file-count: 27
+# basic auth
+"Basic [-a-zA-Z=;:/0-9+]{3,}"
+
+# hit-count: 34 file-count: 18
+# printf
+%s(?:v[a-z]{2,})
+
+# hit-count: 29 file-count: 27
+# magnet urls
+magnet:[?=:\w]+
+
+# hit-count: 23 file-count: 8
+# uuid:
+\b[0-9a-fA-F]{8}-(?:[0-9a-fA-F]{4}-){3}[0-9a-fA-F]{12}\b
+
+# hit-count: 19 file-count: 5
+# Update Lorem based on your content (requires `ge` and `w` from https://github.com/jsoref/spelling; and `review` from https://github.com/check-spelling/check-spelling/wiki/Looking-for-items-locally )
+# grep '^[^#].*lorem' .github/actions/spelling/patterns.txt|perl -pne 's/.*i..\?://;s/\).*//' |tr '|' "\n"|sort -f |xargs -n1 ge|perl -pne 's/^[^:]*://'|sort -u|w|sed -e 's/ .*//'|w|review -
+# Warning, while `(?i)` is very neat and fancy, if you have some binary files that aren't proper unicode, you might run into:
+## Operation "substitution (s///)" returns its argument for non-Unicode code point 0x1C19AE (the code point will vary).
+## You could manually change `(?i)X...` to use `[Xx]...`
+## or you could add the files to your `excludes` file (a version after 0.0.19 should identify the file path)
+# Lorem
+(?:\w|\s|[,.])*\b(?i)(?:amet|consectetur|cursus|dolor|eros|ipsum|lacus|libero|ligula|lorem|magna|neque|nulla|suscipit|tempus)\b(?:\w|\s|[,.])*
+
+# hit-count: 12 file-count: 5
+# javascript match regex
+\.match\(/[^/\s"]*/[gim]*\s*
+
+# hit-count: 10 file-count: 3
+# javascript replace regex
+\.replace\(/[^/\s"]*/[gim]*\s*,
+
+# hit-count: 8 file-count: 6
+# JavaScript regular expressions
+# javascript test regex
+/.*/[gim]*\.test\(
+
+# hit-count: 6 file-count: 5
+# assign regex
+= /[^*].*/
+
+# hit-count: 4 file-count: 3
+# While you could try to match `http://` and `https://` by using `s?` in `https?://`, sometimes there
+# YouTube url
+\b(?:(?:www\.|)youtube\.com|youtu.be)/(?:channel/|embed/|user/|playlist\?list=|watch\?v=|v/|)[-a-zA-Z0-9?&=_%]*
+
+# hit-count: 4 file-count: 2
+# data url in quotes
+([`'"])data:(?:[^ `'"].*?|)(?:[A-Z]{3,}|[A-Z][a-z]{2,}|[a-z]{3,}).*\g{-1}
+
+# hit-count: 4 file-count: 2
+# sha-... -- uses a fancy capture
+(\\?['"]|&quot;)[0-9a-f]{40,}\g{-1}
+
+# hit-count: 3 file-count: 3
+# cid urls
+(['"])cid:.*?\g{-1}
+
+# hit-count: 3 file-count: 3
+# Contributor
+\[[^\]]+\]\(https://github\.com/[^/\s"]+\)
+
+# hit-count: 2 file-count: 2
+# crypt
+(['"])\$2[ayb]\$.{56}\g{-1}
+
+# hit-count: 2 file-count: 1
+# data url
+data:[-a-zA-Z=;:/0-9+]*,\S*
+
+# hit-count: 2 file-count: 1
+# Twitter status
+\btwitter\.com/[^/\s"')]*(?:/status/\d+(?:\?[-_0-9a-zA-Z&=]*|)|)
+
+# hit-count: 1 file-count: 1
+# getopts
+\bgetopts\s+(?:"[^"]+"|'[^']+')
+
+# hit-count: 1 file-count: 1
+# font awesome classes
+\.fa-[-a-z0-9]+
+
+BEGIN.*KEY.*END.*KEY
+(etag|set-cookie)(?::|'\s*=>) .*$
+'[-a-zA-Z=;:/0-9+]{12,}='
+preg_replace(?:_callback|)\("[^"]*",
+
+# Questionably acceptable forms of `in to`
+# Personally, I prefer `log into`, but people object
+# https://www.tprteaching.com/log-into-log-in-to-login/
+\b[Ll]og in to\b
+\blogged in to (?:access|prevent|show|use)\b
+
+# acceptable duplicates
+# ls directory listings
+[-bcdlpsw](?:[-r][-w][-Ssx]){3}\s+\d+\s+\S+\s+\S+\s+\d+\s+
+# mount
+\bmount\s+-t\s+(\w+)\s+\g{-1}\b
+# C types and repeated CSS values
+\s(array|center|die|div|inherit|long|LONG|none|normal|solid|thin|transparent|very)(?: \g{-1})+\s
+# C struct
+\bstruct\s+(\w+)\s+\g{-1}\b
+# go templates
+\s(\w+)\s+\g{-1}\s+\`(?:graphql|json|yaml):
+# javadoc / .net
+(?:[\\@](?:groupname|param)|(?:public|private)(?:\s+static|\s+readonly)*)\s+(\w+)\s+\g{-1}\s
+
+# Commit message -- Signed-off-by and friends
+^\s*(?:(?:Based-on-patch|Co-authored|Helped|Mentored|Reported|Reviewed|Signed-off)-by|Thanks-to): (?:[^<]*<[^>]*>|[^<]*)\s*$
+
+# Autogenerated revert commit message
+^This reverts commit [0-9a-f]{40}\.$
+
+# ignore long runs of a single character:
+\b([A-Za-z])\g{-1}{3,}\b

@@ -1,4 +1,4 @@
-First things first, let's make sure you're logged in to your account.
+First things first, let's make sure you're logged into your account.
 If you're not already logged in, do so in the frame below.
 
 Once you've logged in (or if you are already logged in), you'll now be looking at your profile page.
