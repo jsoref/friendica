@@ -30,7 +30,7 @@ Or clone from:
 
 ## Usage:
 
-1. Insert the necessary elements in to your document's `<head>` section, e.g.:
+1. Insert the necessary elements into your document's `<head>` section, e.g.:
 
 ```html
     <script src="jquery.min.js"></script>
