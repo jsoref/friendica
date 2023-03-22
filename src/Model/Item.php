@@ -877,7 +877,7 @@ class Item
 		/*
 		 * Do we already have this item?
 		 * We have to check several networks since Friendica posts could be repeated
-		 * via OStatus (maybe Diasporsa as well)
+		 * via OStatus (maybe Diaspora as well)
 		 */
 		$duplicate = self::getDuplicateID($item);
 		if ($duplicate) {
