@@ -435,7 +435,7 @@ function render_messages(array $msg, string $t): string
 		$to_name_e = $rr['name'];
 
 		if (is_null($rr['url'])) {
-			// contact-id is pointing to a non existing contact
+			// contact-id is pointing to a nonexistent contact
 			continue;
 		}
 

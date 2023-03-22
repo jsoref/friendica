@@ -1,4 +1,4 @@
-aside, header, #nav-search-box, #nav-admin-link, #nav-messages-linkmenu,  #activitiy-by-date-tab, #shared-links-tab, #nav-logout-link,
+aside, header, #nav-search-box, #nav-admin-link, #nav-messages-linkmenu,  #activity-by-date-tab, #shared-links-tab, #nav-logout-link,
 .wall-item-location {
   display: none;
 }
@@ -112,14 +112,14 @@ nav ul {
   }
   iframe.embed_rich { width: 100% !important }
     /* TODO: check if this is needed.
-   * oembedded iframe usually have "width" and "height" as attributes
+   * embedded iframe usually have "width" and "height" as attributes
    * that override this rule */
   iframe {
     max-width: 100%;
   }
 
   
-  /* the top-nav notfication menu */
+  /* the top-nav notification menu */
   nav #nav-notifications-linkmenu .menu-popup {
 	position: fixed;
 	left: 10px;
@@ -231,7 +231,7 @@ aside.show {
 #cboxLoadedContent > div,
 #acl-wrapper {
   display: -ms-Flexbox !important;
-  -ms-box-orient: vertival;
+  -ms-box-orient: vertical;
 
   display: -webkit-flex !important;
   display: -moz-flex !important;

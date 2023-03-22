@@ -1881,8 +1881,8 @@ msgid "Send text only notification emails, without the html part"
 msgstr "Receive text only emails without HTML "
 
 #: mod/settings.php:773
-msgid "Show detailled notifications"
-msgstr "Show detailled notifications"
+msgid "Show detailed notifications"
+msgstr "Show detailed notifications"
 
 #: mod/settings.php:775
 msgid ""
@@ -5670,7 +5670,7 @@ msgstr "Accounts abandoned after so many days"
 
 #: src/Module/Admin/Site.php:545
 msgid ""
-"Will not waste system resources polling external sites for abandonded "
+"Will not waste system resources polling external sites for abandoned "
 "accounts. Enter 0 for no time limit."
 msgstr "Will not waste system resources polling external sites for abandoned accounts. Enter 0 for no time limit."
 
@@ -6185,7 +6185,7 @@ msgstr "Enable fast-lane"
 
 #: src/Module/Admin/Site.php:609
 msgid ""
-"When enabed, the fastlane mechanism starts an additional worker if processes"
+"When enabled, the fastlane mechanism starts an additional worker if processes"
 " with higher priority are blocked by processes of lower priority."
 msgstr "The fast-lane mechanism starts an additional worker if processes with higher priority are blocked by processes of lower priority."
 
@@ -7480,7 +7480,7 @@ msgstr ""
 #: src/Module/Contact/Revoke.php:78
 msgid ""
 "Follow was successfully revoked, however the remote contact won't be aware "
-"of this revokation."
+"of this revocation."
 msgstr ""
 
 #: src/Module/Contact/Revoke.php:80
@@ -8101,7 +8101,7 @@ msgstr "Host name"
 #: src/Module/Install.php:232
 msgid ""
 "Overwrite this field in case the determinated hostname isn't right, "
-"otherweise leave it as is."
+"otherwise leave it as is."
 msgstr "Overwrite this field in case the hostname is incorrect, otherwise leave it as is."
 
 #: src/Module/Install.php:235
@@ -8731,7 +8731,7 @@ msgstr "Registration successful. Please check your email for further instruction
 #: src/Module/Register.php:328
 #, php-format
 msgid ""
-"Failed to send email message. Here your accout details:<br> login: %s<br> "
+"Failed to send email message. Here your account details:<br> login: %s<br> "
 "password: %s<br><br>You can change your password after login."
 msgstr "Failed to send email message. Here are your account details:<br> login: %s<br> password: %s<br><br>You can change your password after login."
 

@@ -339,7 +339,7 @@ class Register extends BaseModule
 					DI::baseUrl()->redirect();
 				} else {
 					DI::sysmsg()->addNotice(
-						DI::l10n()->t('Failed to send email message. Here your accout details:<br> login: %s<br> password: %s<br><br>You can change your password after login.',
+						DI::l10n()->t('Failed to send email message. Here your account details:<br> login: %s<br> password: %s<br><br>You can change your password after login.',
 							$user['email'],
 							$result['password'])
 					);
@@ -370,7 +370,7 @@ class Register extends BaseModule
 				Model\Register::createForApproval($user['uid'], DI::config()->get('system', 'language'), $_POST['permonlybox']);
 			} catch (\Throwable $e) {
 				$this->logger->error('Unable to create a `register` record.', ['user' => $user]);
-				DI::sysmsg()->addNotice(DI::l10n()->t('An internal error occured.')
+				DI::sysmsg()->addNotice(DI::l10n()->t('An internal error occurred.')
 					. DI::l10n()->t('Your registration can not be processed.'));
 				$this->baseUrl->redirect('register');
 			}
