@@ -6185,7 +6185,7 @@ msgstr "Enable fast-lane"
 
 #: src/Module/Admin/Site.php:609
 msgid ""
-"When enabed, the fastlane mechanism starts an additional worker if processes"
+"When enabled, the fastlane mechanism starts an additional worker if processes"
 " with higher priority are blocked by processes of lower priority."
 msgstr "The fast-lane mechanism starts an additional worker if processes with higher priority are blocked by processes of lower priority."
 

@@ -1319,7 +1319,7 @@ $a->strings['Change base url for this server. Sends relocate message to all Frie
 $a->strings['Maximum number of parallel workers'] = 'Maximum number of parallel workers';
 $a->strings['On shared hosters set this to %d. On larger systems, values of %d are great. Default value is %d.'] = 'On shared hosters set this to %d. On larger systems, values of %d are great. Default value is %d.';
 $a->strings['Enable fastlane'] = 'Enable fast-lane';
-$a->strings['When enabed, the fastlane mechanism starts an additional worker if processes with higher priority are blocked by processes of lower priority.'] = 'The fast-lane mechanism starts an additional worker if processes with higher priority are blocked by processes of lower priority.';
+$a->strings['When enabled, the fastlane mechanism starts an additional worker if processes with higher priority are blocked by processes of lower priority.'] = 'The fast-lane mechanism starts an additional worker if processes with higher priority are blocked by processes of lower priority.';
 $a->strings['Direct relay transfer'] = 'Direct relay transfer';
 $a->strings['Enables the direct transfer to other servers without using the relay servers'] = 'Enables direct transfer to other servers without using a relay server.';
 $a->strings['Relay scope'] = 'Relay scope';
