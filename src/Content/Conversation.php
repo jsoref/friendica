@@ -1360,7 +1360,7 @@ class Conversation
 			}
 		}
 
-		/// @TODO: Stop recusrsively adding all children back to the top level (!!!)
+		/// @TODO: Stop recursively adding all children back to the top level (!!!)
 		/// However, this apparently ensures responses (likes, attendance) display (?!)
 		foreach ($parents as $parent) {
 			if (count($parent['children'])) {
