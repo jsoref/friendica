@@ -7480,7 +7480,7 @@ msgstr ""
 #: src/Module/Contact/Revoke.php:78
 msgid ""
 "Follow was successfully revoked, however the remote contact won't be aware "
-"of this revokation."
+"of this revocation."
 msgstr ""
 
 #: src/Module/Contact/Revoke.php:80
