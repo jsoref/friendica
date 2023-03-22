@@ -1245,7 +1245,7 @@ $a->strings['Will be displayed prominently on the registration page. You can use
 $a->strings['Forbidden Nicknames'] = 'Forbidden Nicknames';
 $a->strings['Comma separated list of nicknames that are forbidden from registration. Preset is a list of role names according RFC 2142.'] = 'Comma separated list of nicknames that are forbidden from registration. Preset is a list of role names according RFC 2142.';
 $a->strings['Accounts abandoned after x days'] = 'Accounts abandoned after so many days';
-$a->strings['Will not waste system resources polling external sites for abandonded accounts. Enter 0 for no time limit.'] = 'Will not waste system resources polling external sites for abandoned accounts. Enter 0 for no time limit.';
+$a->strings['Will not waste system resources polling external sites for abandoned accounts. Enter 0 for no time limit.'] = 'Will not waste system resources polling external sites for abandoned accounts. Enter 0 for no time limit.';
 $a->strings['Allowed friend domains'] = 'Allowed friend domains';
 $a->strings['Comma separated list of domains which are allowed to establish friendships with this site. Wildcards are accepted. Empty to allow any domains'] = 'Comma-separated list of domains which are allowed to establish friendships with this site. Wildcards are accepted. Leave empty to allow any domains';
 $a->strings['Allowed email domains'] = 'Allowed email domains';

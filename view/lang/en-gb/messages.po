@@ -5669,7 +5669,7 @@ msgstr "Accounts abandoned after so many days"
 
 #: src/Module/Admin/Site.php:545
 msgid ""
-"Will not waste system resources polling external sites for abandonded "
+"Will not waste system resources polling external sites for abandoned "
 "accounts. Enter 0 for no time limit."
 msgstr "Will not waste system resources polling external sites for abandoned accounts. Enter 0 for no time limit."
 
