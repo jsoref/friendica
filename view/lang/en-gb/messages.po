@@ -8100,7 +8100,7 @@ msgstr "Host name"
 #: src/Module/Install.php:232
 msgid ""
 "Overwrite this field in case the determinated hostname isn't right, "
-"otherweise leave it as is."
+"otherwise leave it as is."
 msgstr "Overwrite this field in case the hostname is incorrect, otherwise leave it as is."
 
 #: src/Module/Install.php:235
