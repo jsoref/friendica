@@ -370,7 +370,7 @@ class Register extends BaseModule
 				Model\Register::createForApproval($user['uid'], DI::config()->get('system', 'language'), $_POST['permonlybox']);
 			} catch (\Throwable $e) {
 				$this->logger->error('Unable to create a `register` record.', ['user' => $user]);
-				DI::sysmsg()->addNotice(DI::l10n()->t('An internal error occured.')
+				DI::sysmsg()->addNotice(DI::l10n()->t('An internal error occurred.')
 					. DI::l10n()->t('Your registration can not be processed.'));
 				$this->baseUrl->redirect('register');
 			}
