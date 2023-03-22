@@ -557,8 +557,8 @@ class BBCode
 	private static function unescapeNoparseCallback(array $match): string
 	{
 		$captured = $match[1];
-		$unspacefied = preg_replace("/\[ (.*?)\ ]/", "[$1]", $captured);
-		return $unspacefied;
+		$unspecified = preg_replace("/\[ (.*?)\ ]/", "[$1]", $captured);
+		return $unspecified;
 	}
 
 	/**
