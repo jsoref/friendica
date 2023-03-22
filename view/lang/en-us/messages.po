@@ -8731,7 +8731,7 @@ msgstr "Registration successful. Please check your email for further instruction
 #: src/Module/Register.php:328
 #, php-format
 msgid ""
-"Failed to send email message. Here your accout details:<br> login: %s<br> "
+"Failed to send email message. Here your account details:<br> login: %s<br> "
 "password: %s<br><br>You can change your password after login."
 msgstr "Failed to send email message. Here are your account details:<br> login: %s<br> password: %s<br><br>You can change your password after login."
 

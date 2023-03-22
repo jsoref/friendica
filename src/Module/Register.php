@@ -339,7 +339,7 @@ class Register extends BaseModule
 					DI::baseUrl()->redirect();
 				} else {
 					DI::sysmsg()->addNotice(
-						DI::l10n()->t('Failed to send email message. Here your accout details:<br> login: %s<br> password: %s<br><br>You can change your password after login.',
+						DI::l10n()->t('Failed to send email message. Here your account details:<br> login: %s<br> password: %s<br><br>You can change your password after login.',
 							$user['email'],
 							$result['password'])
 					);
