@@ -1881,8 +1881,8 @@ msgid "Send text only notification emails, without the html part"
 msgstr "Receive text only emails without HTML "
 
 #: mod/settings.php:773
-msgid "Show detailled notifications"
-msgstr "Show detailled notifications"
+msgid "Show detailed notifications"
+msgstr "Show detailed notifications"
 
 #: mod/settings.php:775
 msgid ""

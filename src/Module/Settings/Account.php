@@ -634,7 +634,7 @@ class Account extends BaseSettings
 			],
 			'$detailed_notif' => [
 				'detailed_notif',
-				DI::l10n()->t('Show detailled notifications'),
+				DI::l10n()->t('Show detailed notifications'),
 				DI::pConfig()->get(DI::userSession()->getLocalUserId(), 'system', 'detailed_notif'),
 				DI::l10n()->t('Per default, notifications are condensed to a single notification per item. When enabled every notification is displayed.')
 			],
