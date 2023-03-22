@@ -2390,7 +2390,7 @@ class GServer
 			}
 		}
 
-		// Disvover Mastodon servers
+		// Discover Mastodon servers
 		$accesstoken = DI::config()->get('system', 'instances_social_key');
 
 		if (!empty($accesstoken)) {
