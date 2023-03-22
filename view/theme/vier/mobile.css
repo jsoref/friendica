@@ -112,7 +112,7 @@ nav ul {
   }
   iframe.embed_rich { width: 100% !important }
     /* TODO: check if this is needed.
-   * oembedded iframe usually have "width" and "height" as attributes
+   * embedded iframe usually have "width" and "height" as attributes
    * that override this rule */
   iframe {
     max-width: 100%;
